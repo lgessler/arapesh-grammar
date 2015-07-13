@@ -6,6 +6,8 @@ This is a list of materials written by me (Luke Gessler, ldg3fa@virginia.edu) du
 
 Writing the sketch was a sometimes excruciating experience, but well-worth every tear shed as a learning experience.
 
+See also the [sister repository](https://github.com/lgessler/fieldmethods-lexicon-reader) containing very hacky Python code I used to help me manage the glosses I collected from Mr. Sonin, our consultant.
+
 ANTH 5401, Lingusitic Field Methods, is a course at the University of Virginia. I took it during the Spring 2015 semester. Thanks to Lise Dobrin, our instructor, and Jacob Sonin, our consultant, who traveled very far from Papua New Guinea to help us understand his language and life.
 
 # License
