@@ -1,0 +1,749 @@
+
+%
+%Luke Gessler
+%February 20, 2015
+%For ANTH 5401 at UVa: Linguistic Field Methods (Arapesh)
+%
+
+\documentclass[pdftex,12pt,letterpaper]{article}
+\usepackage[pdftex]{graphicx}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage[margin=1in,dvips]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{qtree}
+\usepackage{amssymb}
+\usepackage{paralist}
+\usepackage{titlesec}
+\usepackage{gb4e}
+\usepackage{tipa}
+\usepackage{vowel}
+\usepackage{wrapfig}
+\let\ipa\textipa
+\def\sw{\ipa{\super w}}
+\usepackage[normalem]{ulem}
+\setlength{\parskip}{0mm}
+\usepackage{setspace}
+\usepackage{hyperref}
+
+\newcommand{\BlankCell}{}
+
+%for metadata
+\title{A Grammatical Sketch of Arapesh \\ Draft 1, Revision 1}
+\author{Luke Gessler}
+\date{February 20, 2015}
+
+
+\begin{document}
+
+%title
+\input{./title.tex}
+%toc
+\tableofcontents
+\listoffigures
+\pagebreak
+\doublespacing
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin Actual Grammar %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Preface}
+
+This document is the product of around 10 hours of elicitation spent with a speaker of a variety of Mountain Arapesh, a language in New Guinea. Naturally, all findings herein are tentative.
+
+Transcription is given in an orthography that follows a one-to-one mapping from graphemes to phonemes. Cf. \S 2.2 for details.
+
+All Arapesh forms were given by Jacob Sonin, one of the few remaining speakers of his variety of Arapesh. Mr. Sonin also speaks English and Tok Pisin.
+
+\section{Overview}
+
+In traditional typological terms, Arapesh is a fusional language. In other words, it appears that \begin{inparaenum} [(a)] \item Arapesh words consist of more than one morpheme on average, meaning it is not isolating, and \item Arapesh morphemes combine with each other in ways that are not purely concatenative, meaning it is not agglutinative. \end{inparaenum} 
+
+Arapesh is remarkable for its system of phonological alternations. \emph{Ceteris paribus}, when one noun is switched for a ``different'' one, the words that in some sense ``depend'' on it are significantly changed. Specifically some sounds in the ``dependent'' words occur which aren't predictable just from the noun's own sounds. For this reason, these changes cannot be conditioned purely phonologically. We claim instead that Arapesh has \emph{noun classes}, categories of nouns which determine the inflectional patterns of both the noun and words that depend on it.
+
+Consider these examples:
+
+\begin{exe}
+
+\ex
+\gll \textbf{t}a\textbf{t}ud\textipa{@} numba\textbf{t} \textbf{t}ag\textipa{@}k \\
+that dog die \\
+\trans `That dog dies'
+
+\ex
+\gll \textbf{g}a\textbf{g}id\textipa{@} bo\textbf{g}\\
+that pen\\
+\trans `That pen'
+
+\ex
+\gll orubai\textbf{gw}i numba\textbf{gw} \textbf{gw}ag\textipa{@}k \\
+many dogs die \\
+\trans `Many dogs die'
+
+\ex
+\gll yopu\textbf{kw}i bu\textbf{k(w)\ipa{\super ?}} \\
+pleasing book\\
+\trans `pretty/good book'
+
+\ex
+\gll b\ipa{@r@h@}bi\textbf{w}i bume\textbf{p} \\
+many books\\
+\trans `many books'
+
+\end{exe}
+
+\noindent From (1) and (2) we see that the head words' (\emph{numbat} and \emph{bog}) dependents (\emph{tatud\textipa{@}} and \emph{gagud\textipa{@}}) have inflected based on what we might refer to as \emph{thematic sound}s, which are rendered in boldface. Further, in (1), we see that the predicate being applied to the noun phrase has also taken on this thematic sound. We also see this in (3).
+
+Consider (4) and (5). Interestingly, the thematic sound in (5) is not the same in the adjective as it is in the noun. Indeed, many Arapesh nouns produce thematic sounds in their adjectives which are different from their own thematic sound. Also note that \emph{buk} is an English loanword. Apparently, it was incorporated seamlessly into an Arapesh noun class, as it is hard to imagine how else it was granted the plural form \emph{bumep}, not \emph{buks}. This illustrates one of the biggest questions raised by the Arapesh data. We have clear evidence that noun classification is a productive process in Arapesh. What, then, are the criteria by which Arapesh noun classes are differentiated? These criteria could be phonological, semantic, or perhaps neither.
+
+Arapesh's apparent word order is SVO.
+
+\section{Phonology}
+
+Arapesh's phonemes consist of 7 monophthongs, a few diphthongs whose phonemic status is unclear, and around 20 consonants. Suprasegmentals are largely inert in differentiation of words: any differences in vowel quantity, tone, or nasality seem to be inconsequential at the lexical level. Stress seems predictable, most of the time falling on the first syllable of a word. 
+
+The hunt for these phonemes has been confounded by our consultant's variability in pronunciation, which is often dependent on his degree of enunciation. Of course, this is to be expected in any human speaking a natural language, but this deserves note because of how it has rendered unclear the degree to which some segments are differentiated. While we might get one ``normal'' form after prompting our consultant, further prompting, either in the form of a request for repetition or a repetition of our own, sometimes elicits a form that sounds very different to our Anglo ears. These differences can come in the form of quality change (\emph{g\textbf{\ipa{@}}nikwadai} vs. \emph{g\textbf{a}nikwadai}) and elision (\emph{worubai\textbf{w}i} vs. \emph{worubai\textbf{gw}i}), among others. We and our consultant have done our best to ensure we are getting these more defined, enunciated forms.\footnote{However, it's worth noting that by doing this we're imposing our own structure on the data, compromising its integrity in the hope that the enunciated forms will shed more light on the grammatical mechanisms of Arapesh. We must not ignore the ``normal'' forms, because they are important, and indeed the norm, in everyday speech. Compare the ``normal'' pronunciation of \textless photography\textgreater, {[f\ipa{@}t\ipa{O}gr\ipa{@}fi]}, with its ``enunciated'' pronunciation, {[fot\ipa{O}gr\ipa{@}fi]}. Chances are that native English speakers use the former more in organic communication.}
+
+Luckily, many of Arapesh's sounds are familiar to the author's ear, but some, especially among the vowels, are foreign and hard to discern. Uncertainty will be noted.
+
+\subsection{Consonants}
+
+\begin{figure}[h]
+\begin{center}
+\def\arraystretch{1.4}
+\begin{tabular}{| r | c | c | c | c | c | c |} \hline
+& Labial & Dental & Alveolar & Palatal & Velar & Glottal \\ \hline
+Stop/Affr. & p b & t d & c j & & k g k\ipa{\super w} g\ipa{\super w} & \\ \hline
+Fricative & \hspace{12pt}\hspace{12pt} & s\hspace{12pt} & & & \hspace{12pt}\hspace{12pt} & h h\ipa{\super w} \\ \hline
+Flap/Glide & &  & \hspace{12pt}r & \hspace{12pt}y& \hspace{12pt}(w) & \\ \hline
+Nasal & \hspace{12pt}m & \hspace{12pt}n & & \hspace{12pt}\ipa{\textltailn} & & \\ \hline
+\end{tabular}
+\caption{Arapesh consonants}
+\end{center}
+\end{figure}
+\begin{figure}[h]
+\begin{center}
+\def\arraystretch{1.4}
+\begin{tabular}{| r | l | l | l |}
+\hline
+ & Initial & Medial & Final \\ \hline
+ p & wor\ipa{1}p `river' & \ipa{@p@} `we' & rowep `fruits' \\\hline
+ b & bog `pen' & \ipa{\textltailn ib1r} `stomach' & wab `night' \\\hline
+ t & tapwe `(dog) sits' & \ipa{@}rmatok\ipa{\super w} `woman' & n\ipa{1}mbat `dog' \\\hline
+ d & dok `today' & nidawik `daughter' & \textsc{Not Observed} \\\hline
+ c & cup `leaf' & ecah\ipa{\super w} `bag' & biyec `two (thighs') \\\hline
+ j & juehas `hot' & gi\ipa{j1r1}k & \textsc{Not Observed} \\\hline
+ k & eik `I' & ok\ipa{\super w}ok\ipa{\super w} `she' & aduk `outside' \\\hline
+ g & bog gani `pen and ...' & \ipa{\textltailn umanig@s} `(be) cold' & \ipa{y@m@g} `face' \\\hline
+
+ \end{tabular}
+ \end{center}
+ \caption{Stop and affricate correspondence table}
+ \end{figure}
+
+ \subsubsection{Stops} 
+
+ Among the stops and affricates, voicing is undoubtedly phonemic in the word-initial and word-medial positions. It is less immediately clear whether Arapesh neutralizes this distinction in the word-final position. Both [j] and [d] are unobserved in this position, although /b/ and /g/ seem to have occurred in this position. For example, the last segment of /mihig/ `mountain' sounds very different from the last segment of /dok/ `today', and similarly with /\ipa{\textltailn1t@b}/ `time' and /ruwahaep/ `morning'. The lack of word-final [j] and [d] is a mystery, but it does not seem that word-final devoicing is active in general.
+ 
+ Aspiration, as in English, is not contrastive, although it occurs in some environments more often than in others. For example, /\ipa{t\super h}/ can be heard often word-initially as in \emph{n\ipa{1}mbat tani} `the dog and...', but it is usually only pronounced reliably word-finally if our consultant is making conscious effort to enunciate.
+ 
+ Labialized analogues of /k/ and /g/, /k\sw/ and /g\sw/, have been posited on the grounds of preservation of syllable structure, as will be addressed later.
+
+ \subsubsection{Fricatives}
+
+ /s/ is a robust phoneme. Consider minimal pair \emph{cup}, `page', \emph{cus} `pages'. 
+
+ /h/ is well-supported in the initial and medial positions, as in /\ipa{ahwi aropa hani}/ `red cloth and...'. Its existence in the final position is less immediately discernible to a native speaker of English, but still possible. When Mr. Sonin produced /wah juweh/ `the sun is hot', even though the phonetic quality of [h] was not entirely discernible to me, he still seemed to pause for the /h/'s, lengthening the utterance beyond what would have been produced for an utterance */wa juwe/, which Mr. Sonin would have spoken much more quickly. The /h/ phoneme also appears elsewhere word-finally, as in /kurukuguh/ `bees', /nabɨh/ `he goes down', etc. [x] sometimes apparently occurs word-finally, as in [bi\ipa{@}rux narux] `two teeth' and [bwie \ipa{\textltailn}umineg\sw ix] `two days'. It's difficult to distinguish [x] from [h], which are phonetically very similar, but luckily we do not even need to go down that road. Since [x] appears nowhere else, it seems best to consider it an allophone of /h/, if it occurs at all.
+ 
+ /h\sw/ is almost as well-supported as /h/. In the initial and medial positions there are a few unambiguous instances: /h\sw atagɨr/ `(bees) come out', /moh\sw iyeriw/ `sisters'. Just as with /h/, there is some confusion about /h\sw/'s allophony in the final position. Sometimes an apparent [\ipa{F}] appears as in [ohobiyo\ipa{F}] \ipa{\textltailn uman@g@s} sanu\ipa{F} `we (two women) feel cold' and [worubaici ohurigu\ipa{F}] `many necks'. Following the same argument as above, because of the extreme phonetic similarity between [h\sw] and [\ipa{F}], combined with the lack of [\ipa{F}] in other contexts, it seems best to claim that [\ipa{F}], if it exists, is an allophone of the phoneme /h\sw/. There are some lingering problems with /h\sw/, among them being the choice not to analyze it as /h/ and /w/ and whether or not apparent instances of /h\sw/ word-finally are actually instances of diphthongs ending in [u]. These will be addressed in the sections that deal with /w/ and diphthongs, respectively. 
+
+ \subsubsection{Flaps and glides}
+
+ The consultant has produced sounds very close to both {[l]} and {[r]}. There's a weak tendency to produce sounds more on the r-side of the spectrum intervocalically, with sounds on the l-side elsewhere. But {[l]} and {[r]} (as English ears conceive of them) are quite freely varied. Students have tried very many times to give the opposite sound where they heard one (e.g. {[\ipa{@lmatok}]} after hearing {[\ipa{@rmatok}]}, but the strongest reaction this has produced from our consultant is some mild resistance in the form of raised eyebrows and a repetition of the word as he originally said it.
+
+ It's important to remember that Mr. Sonin is competent in two languages that enforce an l-r distinction, English and Tok Pisin. Interference from these two languages could lead to Mr. Sonin conceiving of these two sounds as separate phonemes when he is speaking Arapesh, even if ``pristine'' Arapesh does not enforce such a distinction.\footnote{It would be interesting to know how a speaker of Arapesh would pronounce Mr. Sonin's form [wilwil] `bicycle', a Tok Pisin loan. We might expect something closer to [wirwir] or [wilwir] some of the time, although Mr. Sonin has never produced these himself.} Thus we have reason to question his mild resistance to the ``reversed'' forms we produced for him to probe the distinction. Further, because his pronunciation of {[l]} and {[r]} has varied in between the two even in the same positions in the same words (e.g. in /\ipa{@d1r}/ `indeed', /\ipa{n1r1g@s}/ `families'), the analysis of the two sounds as noncontrastive, forming a single phoneme /r/, is favored, in the absence of a minimal pair to distinguish {[r]} and {[l]}.
+
+ Labiovelar glide [w] appears more with some consonants than with others. It appears often after /h/, /k/, /g/, /p/, /b/, but never after /t/, /d/, /c/, /j/. If our observations had finished there we could have easily posited labialized analogues of /h/, /k/, /g/, /p/, and /b/, but there is a complication. We also find that /w/ occurs on its own, as in /wab/ `night', /giwab/ `night is already over', /wehisi/ `empty', and /beiwog\sw/ `steps'. It would seem odd to posit an independent /w/ phoneme in light of such strong evidence for phonemic labialized consonants, yet at the same time there are some words that unambiguously have an independent [w] sound. It's unclear what the way forward is, hence the parentheses around /w/ in the table.
+  
+ \subsection{Vowels}
+
+ \subsubsection{Monophthongs}
+
+ \begin{wrapfigure}{r}{.4\textwidth}
+ \begin{center}
+ {\large
+ \begin{vowel}
+   \putvowel{i}{23pt}{17pt}
+     \putvowel{\ipa{1}}{63pt}{20pt}
+       \putvowel{e}{40pt}{45pt}
+         \putcvowel{\ipa{@}}{11}
+           \putcvowel{\ipa{5}}{15}
+             \putvowel{o}{100pt}{45pt}
+               \putvowel{u}{95pt}{17pt}
+               \end{vowel}
+ }
+ \caption{Arapesh monophthongs.}
+ \end{center}
+ \end{wrapfigure}
+
+ Arapesh has 7 monophthongs, each with some degree of allophony because of the large partitionings of the vowel space. /i/ is often heard as {[\ipa{I}]}, /u/ as {[\ipa{U}]}, /o/ as {[\ipa{O}]}, and /e/ as {[\ipa{E}]}. A minimal pair supporting the distinction /i/ and /e/ is /ohur\textbf{i}gur/ `neck' vs. /ohur\textbf{e}gur/ `shin'. Minimal pairs for the other vowels have not yet been found, but each monophthong's ubiquity in every word position lends confidence that they are all fully phonemic.
+
+ There are a couple caveats. Words with /\ipa{5}/ are sometimes heard at other times with /\ipa{@}/. For example, Mr. Sonin seems to have produced both {[\ipa{b@r@h@biwi}]} `black' and variant {[\ipa{b@r@habiwi}]}. This variation could easily be the listener's error, and warrants further investigation.
+
+ Second, /\ipa{1}/ is a foreign sound for the author. Some words seemed certain to have /\ipa{1}/ in them, such as /\ipa{@d1r}/ `indeed', but the author fears he has sometimes resorted to transcribing \emph{any} unfamiliar sound as /\ipa{1}/. Some students have reported hearing /\ipa{\o}/ and /y/ in Mr. Sonin's speech, and the author feels that he may have heard them in some forms (e.g. /\ipa{atub\o r ehib\o r}/, `a single hair'), but this bears further investigation. 
+ 
+ Using Praat to analyze the formants of these vowels, while cumbersome, may be worthwhile.
+
+ \subsubsection{Diphthongs} 
+
+ Arapesh has a number of sequences which may be considered diphthongs. The author has at times heard {[\ipa{d\textbf{o@}k}]} `today', {[\ipa{\textbf{@I}\t{tS}\textbf{5U}}]} `string bag', {[\ipa{mok@d\textbf{5i}}]}, {[\textbf{ei}k]} `I', {[\textbf{oi}\ipa{\t{tS}}up]} `(Lise) lies'. Some segments exist that are not diphthongized, as in {[weror\textbf{o.i}ni]} (not *{[weror\textbf{\ipa{\t{oi}}}ni]}) `young', leading us to believe that at least some diphthongs have a robust existence. Others such as {[\ipa{@I}]} seem to be allophones of other phonemes, like /e/.\footnote{There is this configuration in lower sociolects of Delhi Hindi, where [\ipa{@I}] is an allophone of /\ipa{E:}/.}
+
+ \subsection{Syllable Structure}
+
+ The syllable structure of Arapesh hinges on our analysis of [w]. Complex onsets and codas are \emph{never} observed except when [w] is present after one of the consonants with which it co-occurs, identified in \S 2.1.3. If we accept /w/ as a phoneme with full status,  we would have to posit a syllable structure (C)(C)V(C)(C)\footnote{A (V) may or may not be necessary depending on whether we decide to treat any of the diphthongs as a sequence as two monophthongs. For now, all diphthongs are assumed to each form a single phonemic unit.}. Accepting a labialized series of consonants thus yields a syllable structure (C)V(C).
+
+ \subsection{Notable Allophony}
+
+ The words for `I' and `you \textsc{2sg}' both end in /k/. Mr. Sonin, even when not specifically asked for these forms, has produced /\ipa{eik}/ and /\ipa{\textltailn@k}/ the two, respectively. But when these forms are not cited in isolation, the /k/ appears optionally:
+
+ \begin{minipage}{\textwidth}
+ \begin{exe}
+ \ex
+ \gll ei man\ipa{@g@s} sanwe \\
+ I cold feel.\textsc{1sg} \\
+ \trans `I feel cold'
+
+ \ex
+ \gll ei\textbf{k} man\ipa{@g@s} sanwe \\
+ I cold feel.\textsc{1sg} \\
+ \trans `I feel cold'
+ \end{exe}
+ \vspace{10pt}
+ \end{minipage}
+
+ \noindent An identical process also happens with /\ipa{\textltailn@k}/.
+
+ \begin{minipage}{\textwidth}
+ \begin{exe}
+ \ex
+ \gll \ipa{\textltailn@k} \ipa{\textltailn 1r1bain} \\
+ you.\textsc{2sg} hungry \\
+ \trans `You are hungry'
+
+ \ex
+ \gll \ipa{\textltailn @k} \ipa{\textltailn uman@g@s} sanin\\
+ you.\textsc{2sg} cold feel \\
+ \trans `You are cold'
+
+ \ex
+ \gll ei yaka \ipa{\textltailn @} \ipa{\textltailn @naki} \\
+ I want you.\textsc{2sg} come \\
+ \trans `I want you to come'
+
+ \end{exe}
+ \vspace{10pt}
+ \end{minipage}
+
+ \noindent An obvious objection might be that /\ipa{\textltailn @}/ occurs intrasententially and /\ipa{\textltailn @}k/ does not. To the author's recollection, Mr. Sonin has also produced both forms in both contexts, implying a free variation. 
+
+ This pattern has not been observed in other instances of /k/ outside of pronouns. For example, /d\t{ou}k/ `today' can never be, or at least has not been observed as, */d\t{ou}/.
+
+
+
+ \subsection{Unresolved Questions}
+
+ \begin{enumerate}
+
+ \item Is voice neutralized word-finally?
+
+ \item Are /x/ and /\ipa{F}/ phonemes?
+
+ \item What is the difference between {[h]} and {[\ipa{H}]}, and does it matter in Arapesh?
+
+ \item Is it better to understand {[w]} as an independent phoneme or to posit labialized consonants?
+
+ \item Are {[l]} and {[r]} distinct?
+
+ \item Does Arapesh have front rounded vowels? Could comparing the formants of the ``trouble'' vowels give information that untrained ears cannot?
+
+ \item Does Arapesh have vowel harmony?
+
+ \end{enumerate}
+
+ \section{Morphology}
+
+ Arapesh is a fusional language, leveraging nonconcatenative morphological processes like reduplication, ablaut, and infixation, among others, to construct its words. It is a little premature to say that Arapesh has a case system, but there are hints in that direction in the data.
+
+ It is clear that Arapesh has word classes, at least on the level of the different collections of morphemes that clothe each respectively. A first division can be made between nouns and verbs, with adverbs, conjunctions, and maybe adjectives also being discernible. Arapesh has no apparent determiners. 
+
+ \subsection{Nouns}
+
+ Nouns in Arapesh determine much of the morphology of a sentence. Coreferential verbs and adjectives also inflect with them at least in part. The ways of forming a plural form from a singular are many, varying depending on the noun class. These are shown in figure 4, arranged in order of increasing ``complexity''. 
+
+ Most simply, some nouns (\emph{\ipa{\textltailn eg1r}, glas, mugas}) are invariant, keeping the same form in both the singular and plural. Next are the nouns whose plurals are formed by concatenation of more material onto the end of the word (\emph{bog, ki, e\ipa{\t{tS}}au}). Next, there are some nouns that modify the endings of words (\emph{numbat, buk}), and some that modify the endings and concatenate onto the beginning (\emph{arupa}). Finally, some nouns have only a couple segments in common with their plural forms, the rest of the material being changes or additions to the singular form (\emph{ohorug, wab, \ipa{y@rih}}).
+
+ \begin{figure}[h]
+ \begin{center}
+ \def\arraystretch{1.4}
+ \begin{tabular}{| l | l | l @{\hskip .5cm}||@{\hskip .5cm} l | l | l |}
+ \hline
+ \textsc{sg} & \textsc{pl} & Gloss & \textsc{sg} & \textsc{pl} & Gloss \\\hline
+ \ipa{\textltailn eg1r} & \ipa{\textltailn egu} & `stick, name' & numbat & numbau & `dog' \\\hline
+ glas & glas & `glass' & buk & bumep & `book' \\\hline
+ mugas & mugas & `nose' & nugur & nuguguh & `jaw' \\\hline
+ bog & bog\ipa{@}s & `utensil, pen' & arupa & harupweh & `cloth' \\\hline
+ ki & kih\ipa{@}s & `key' & ohorug & oh\ipa{1rib1s} & `knee' \\\hline
+ e\ipa{\t{tS}}au & e\ipa{\t{tS}}auruh & `bag' & wab & web\ipa{1}s & `night'\\\hline
+ rowem & rowep & `fruit' & \ipa{y@rih} & \ipa{yoruweruh} & `legs'   \\\hline
+ \end{tabular}
+ \end{center}
+ \caption{Singular and plural nouns}
+ \end{figure}
+
+ \subsection{Adjectives}
+
+ Adjectives are not morphologically distinguished from nouns, which is why it is not yet clear whether we should distinguish them from nouns. Adjectives are acceptable both before and following their head noun. It is not yet clear what, if any, difference in meaning there is between the two positions. Concretely, there is no apparent difference between \emph{\ipa{b@r@h@biwi bumep}} and \emph{\ipa{bumep b@r@h@biwi}} `black books'.
+
+ \begin{minipage}{\textwidth}
+ \begin{exe}
+ \ex
+ \gll biwotuk \ipa{b@r@h@biwi} bumep \\
+ three black books \\
+ \trans `Three black books'
+ \end{exe}
+ \vspace{10px}
+ \end{minipage}
+
+ \noindent This form demonstrates how quantifying adjectives can combine with qualitative adjectives to both modify a head noun, with the quantifying adjective coming first, though it is not yet clear whether other orders (perhaps \textsc{quant n adj}?) are possible.
+
+ The morphology of adjectives is more regular than that of nouns. Remembering that we think of noun classes as having ``thematic sounds'' (which are motivated in part, as we will see, by adjective morphology), it seems that all qualitative adjectives (i.e. adjectives that aren't natural numbers like 1,2,$\ldots$) have a ``theme slot'' (which we will signify with $\otimes$) which is populated with the thematic sound of the noun. Thus in citation form we have the adjectives \emph{choku$\otimes$i} `small' and \emph{worubai$\otimes$i} `many, more than four', yielding forms like \emph{umai\textbf{p}i chu\textbf{p}} `white paper' as well as \emph{choku\textbf{ber}i uta\textbf{ber}} `small stones'. Some adjectives are a little less well-behaved. Consider the forms in Figure 5. We can derive a citation form for `red' \emph{$\otimes$auhi}, and that works for both `fruit' and `fruits', but it provides no way of explaining the labialization of /h/ in the `red leaf' form, perhaps (if we find more evidence that the \emph{hw} was either a mishearing or unimportant) shooting down our hypothesis that all the morphology of the adjective is predictable from information about the noun.
+
+ \begin{figure}[t]
+ \begin{center}
+ \def\arraystretch{1.4}
+ \begin{tabular}{| l | l |}\hline
+ Form & Gloss \\\hline
+ \emph{mauhi rowem} & `red fruit' \\\hline
+ \emph{pauhi rowep} & `red fruits' \\\hline
+ \emph{pauhwi chup} & `red leaf' \\\hline
+
+ \end{tabular}
+ \end{center}
+ \caption{`red' with different nouns}
+ \end{figure}
+
+ \subsection{Pronouns}
+
+ Arapesh has three numbers---singular, dual, and plural---and makes gender distinctions in only some of them. The pronoun forms under discussion were used in possessive constructions as well as more prototypical settings as the subject. 
+
+ \textbf{Singular}:
+
+ \begin{minipage}{\textwidth}
+ \begin{exe}
+ \ex
+ \gll ei yati patrick \\
+ I see Patrick \\
+ \trans `I see Patrick'
+ \ex
+ \gll \ipa{\textltailn e} \ipa{\textltailn eatu} \\
+ you.\textsc{sg} stand \\
+ \trans `You are standing'
+ \ex
+ \gll okok kwapwe gand\ipa{@}k \\
+ she stand there \\
+ \trans `She is standing there'
+ \ex
+ \gll michael \ipa{@n@n} \ipa{@rpe\textltailn} \\
+ michael he man-person \\
+ \trans `Michael is a man'
+ \end{exe}
+ \vspace{10px}
+ \end{minipage}
+
+ \noindent As seen, singular forms distinguish gender only in the third person.
+
+ \textbf{Dual:}
+
+ \begin{minipage}{\textwidth}
+ \begin{exe}
+ \ex
+ \gll ohobiyop \ipa{\textltailn uman@g@s} sanup \\
+ we.\textsc{dual}.\textsc{f} cold feel \\
+ \trans `We two (women) feel cold'
+ \ex
+ \gll ohobi\ipa{@}m \ipa{\textltailn uman@g@s} sanum \\
+ we.\textsc{dual}.\textsc{m} cold feel \\
+ \trans `We two (men) feel cold'
+ \ex
+ \gll ipobiyo \ipa{\textltailn uman@g@s} sanip \\
+ you.\textsc{dual}.\textsc{c} cold feel \\
+ \trans `You two feel cold'
+ \ex
+ \gll michael \ipa{@n@n} \ipa{@rpe\textltailn} \\
+ michael he man-person \\
+ \trans `Michael is a man'
+ \ex
+ \gll owobio owowi-g-e\ipa{\t{tS}}au\\
+ they.\textsc{dual}.\textsc{f} they.\textsc{dual}.\textsc{f}-\textsc{possessive}-bag \\
+ \trans `The bag of the two females'
+ \end{exe}
+ \vspace{10px}
+ \end{minipage}
+
+ \noindent The pronouns for the dual are differentiated by gender in the first person, but not in the second person. In the third person, we only have data for a form that was glossed as feminine.
+
+ \textbf{Plural:}
+
+ \begin{minipage}{\textwidth}
+ \begin{exe}
+ \ex
+ \gll \ipa{@p@} \ipa{\textltailn uman@g@s} sanuk \\
+ we cold feel \\
+ \trans `We all feel cold'
+ \end{exe}
+ \vspace{10pt}
+ \end{minipage}
+
+ \noindent It must be the case that plural forms of the 2nd person and 3rd person pronouns exist, but they have not yet surfaced, or at least the author has not noted them yet.
+
+ \subsection{Verbs}
+
+ Verbs are morphologically complex, taking affixes which agree with their subject and suffixes which can be used, presumably among other things, to express benefaction. For example, 
+
+ \begin{exe}
+ \ex 
+ \gll michael n\ipa{@-ne-m@p} \ipa{y@pog@ni} \ipa{worigy1n} \\
+ michael \textsc{3sg.m}-make.\textsc{real}-1\textsc{pl.benef} good food \\ 
+ \trans `Michael made good food for us'
+
+ \ex 
+ \gll michael n\ipa{@-ne-mok} \ipa{y@pog@ni} \ipa{worigy1n} \\
+ michael \textsc{3sg.m}-make.\textsc{real}-3\textsc{sg.\textsc{f}.benef} good food \\ 
+ \trans `Michael made good food for her'
+
+ \ex 
+ \gll ya-wok \ipa{@ber} \\
+ \textsc{1sg}-drink.\textsc{real} water \\
+ \trans `I drink water'
+ \end{exe}
+
+ \noindent Note how \emph{n\ipa{@}} is prepended to the `bare' verb form to indicate a \textsc{3sg.m} agent, contrasted with \emph{ya} for a \textsc{1sg} agent. 
+
+ \subsubsection{Realis and irrealis}
+
+ Arapesh makes a basic realis/irrealis (or non-future/future) distinction for statement-of-fact verbs. Distinction of the two morphologically is semi-regular. It is often accomplished via \begin{inparaenum}[(a)] \item ablaut or \item application of phonological rule $a \rightarrow \emptyset / \texttt{V}a,$ where V is a segment that can act as a full vowel\end{inparaenum}. Some forms, however, remain the same in realis and irrealis.
+
+ \begin{exe}
+ \ex
+ \gll ei yapwe \\
+ I sit.\textsc{real} \\
+ \trans `I am sitting, I sat'
+
+ \ex
+ \gll ei nuhut ipwe \\
+ I tomorrow sit.\textsc{irr} \\
+ \trans `I will stay tomorrow'
+
+ \ex
+ \gll lise kwati patrick \\
+ Lise see.\textsc{real} Patrick \\
+ \trans `Lise sees Patrick'
+
+ \ex
+ \gll lise nuhut kuti patrick \\
+ Lise tomorrow see.\textsc{irr} Patrick \\
+ \trans `Lise will see Patrick tomorrow'
+
+ \ex
+ \gll kukum mabup \\
+ fog comes\_down.\textsc{real} \\
+ \trans `Fog (snow) comes down'
+
+ \ex
+ \gll nuhut kukum omaimi mubup \\
+ tomorrow fog white comes\_down.\textsc{irr} \\
+ \trans `White fog (snow) will come down tomorrow.'
+
+ \ex
+ \gll michael douk napwe \\
+ michael today sit.\textsc{real} \\
+ \trans `I will stay tomorrow'
+
+ \ex
+ \gll nuhut napwe \\
+ tomorrow sit.\textsc{irr} \\
+ \trans `(Animate male) will stay tomorrow.'
+ \end{exe}
+
+ \noindent The first pair of forms display the most common way of forming the irrealis, by removing an \emph{a}. Note that the palatal glide then serves as a the vowel for the first syllable. Similarly with the next pair, but with the labiovelar glide now serving as the vowel.
+
+ In the next pair we see that even though a segment \emph{a} is present, the phonological rule in (b) above cannot apply, because in Arapesh's phonology, \emph{m} cannot act as a vowel. (Indeed, in this case it would need to act as an entire syllable on its own.) In this case it turns out that the \emph{a} in the realis form surfaces as a \emph{u} in the irrealis form, though this does not always happen. In the final pair, we see that in a similar environment, the \emph{a} remains the same.
+
+ \subsubsection{Volitionals}
+
+ Volitional statements of the form `$P_1$ wants to $Y$', i.e. where the entity expressing the desire is coreferential with the one who will carry out the desire, seem to be formed via a prefixation, closer to the verb stem than the pronominal prefix. There are only a few observed forms that fall into this category, but all exhibit this pattern.
+
+ \begin{exe}
+ \ex
+ \gll ei y\ipa{@-nak} \\
+ I \textsc{1sg}-sit.\textsc{real} \\
+ \trans `I go'
+
+ \ex
+ \gll ei y\ipa{@-\textbf{kai}-nak} \\
+ I \textsc{1sg}-\textsc{vol}-go \\
+ \trans `I want to go'
+
+ \ex
+ \gll ei ya-wok \ipa{@ber} \\
+ I \textsc{1sg}-drink.\textsc{real} water\\
+ \trans `I drink water'
+
+ \ex
+ \gll ei y\ipa{@-\textbf{kai}-wok} \ipa{@ber} \\
+ I \textsc{1sg}-\textsc{vol}-drink water\\
+ \trans `I want to drink water'
+
+ \end{exe}
+
+ \noindent The most immediate explanation is that \emph{kai} has been prefixed. A slight irregularity whose explanation is not immediately clear is why \emph{a} is paralleled by a \emph{\ipa{@}} in the volitional form. Vowel reduction in polysyllabic words may be an active process in Arapesh. Error on the listener-transcriber's part is also possible. More data is necessary to settle the matter.
+
+ The prefix is not the same for all persons:
+
+ \begin{minipage}{\textwidth}
+ \begin{exe}
+
+ \ex
+ \gll \ipa{@p@} ma-pwe morahwin \\
+ we \textsc{1pl}-sit resting \\
+ \trans `We are resting'
+
+ \ex
+ \gll \ipa{@p@} ma-\textbf{kamu}-pwe morahwin \\
+ We \textsc{1pl}-\textsc{vol}-sit resting \\
+ \trans `We want to rest'
+
+ \end{exe}
+ \vspace{10pt}
+ \end{minipage}
+
+ \noindent We might suspect that because these volitional forms are constructed from the realis forms that there might be \emph{ir}realis volitionals, e.g. `I will want to rest'. 
+
+ The other class of volitionals is of the form `$P_1$ wants $P_2$ to $Y$'. This will be covered in the next draft.
+
+ \pagebreak
+ \section{Syntax}
+
+ Arapesh's basic word order is SVO.
+
+ \begin{exe}
+ \ex
+ \gll ei y\ipa{@-k@n} brady \ipa{@kud@k} buk \\
+ I \textsc{1sg}-give brady this book\\
+ \trans `I give Brady this book'
+
+ \ex
+ \gll brady \ipa{na-k1ri} pok=um \ipa{@nen-baraim} \\
+ brady \textsc{3sg}-tell.\textsc{real} her=\textsc{dat} \textsc{3sg.poss}-speech\_datum\\
+ \trans `Brady told her something'
+
+ \ex
+ \gll brady \ipa{na-k1ri} michael=um \ipa{@nen-baraim} \\
+ brady \textsc{3sg}-tell.\textsc{real} michael=\textsc{dat} \textsc{3sg.poss}-speech\_datum\\
+ \trans `Brady told Michael something'
+ \end{exe}
+
+ \noindent In the first example we see something exactly analogous to an English ditransitive sentence, `I give Brady this book'. Note however that in the next two sentences we see a case marker, which seems like more of a clitic than a regular morpheme, attaching in the first to a specific (oblique, perhaps?) form of the \textsc{3sg.f} pronoun \emph{okokw}, and in the second to a proper name, Michael. There are a few reasons for this. The first hint was that Mr. Sonin enunciated \emph{um} in a way that suggested he conceived of it as a separate word, as is usually the case with speakers' perceptions of case clitics.\footnote{Cf. Mopan Maya genitive, and esp. Hindi case clitics, both of which are orthographically separated from other words. If orthography systems are a valid proxy for laymen's perceptions of `wordhood', this is evidence that these case clitics are thought of as separate words.} The case is further supported by how, in contrast with how much of Arapesh's morphology works, \emph{um} is merely concatenated and does not intrusively alter the structure of its host word.
+
+ Thus although Arapesh does not have a fully developed case system, we see traces of it in pronouns and sometimes in ``grammatical words'' like \emph{um}. Thus in this respect Arapesh is strikingly like English, which maintains differences e.g. between \emph{I} and \emph{to me} but not \emph{Michael} and \emph{to Michael}.
+
+ \subsection{Copula}
+
+ Arapesh has no copula word. The subject is by default the first NP of a sentence, and the predicate follows. However, this is questionable.
+
+ \begin{exe}
+ \ex 
+ \gll hannah eli \ipa{@n@n-ik-mohokwik} \\
+ hannah eli \textsc{3sg.m-poss}-sister \\
+ \trans `Hannah is Eli's sister'
+
+ \ex 
+ \gll eli \ipa{@n@n-ik-mohokwik} hannah  \\
+ eli \textsc{3sg.m-poss}-sister hannah\\
+ \trans `The sister of Eli is Hannah; Hannah is Eli's sister; Eli, his sister is Hannah'
+ \end{exe}
+
+ \noindent Mr. Sonin suggested these two phrasings are equivalent, and indeed they are truth-conditionally, but one could imagine the two arising in different organic discourse situations.\footnote{Note that we're making the rather large assumption that Arapesh discourse conventions for new and old information are the same as they are in English, which may not be true.} The first would arise in a situation where we know Hannah but don't know her relation to Eli, and the second would arise in a situation where we're aware of Eli's sister but don't know that she is Hannah. Thus we can still make the case that in both these utterances, we have a subject followed by a predicate. 
+
+ Whether there are sentences that must be analyzed as having the predicate followed by the subject remains to be seen. 
+
+ \subsection{Pronouns and Proper Nouns}
+
+ As has been seen in the examples, pronouns can, with apparently no significant difference in meaning, often be \begin{inparaenum}[(a)] \item dropped, \item present, or \item included after an NP.\end{inparaenum}
+
+ \begin{exe}
+ \ex
+ \gll nuhut napwe \\
+ tomorrow sit.\textsc{irr} \\
+ \trans `(Animate male) will stay tomorrow.'
+
+ \ex 
+ \gll \ipa{@n@n} \ipa{n1r1ban} \\
+ \textsc{3sg.m} hungry \\
+ `He is hungry'
+
+ \ex 
+ \gll lara okok \ipa{@rmatok} \\
+ lara \textsc{3sg.f} woman-person \\
+ \trans `Lara, she is a woman; Lara is a woman'
+ \end{exe}
+
+ \noindent Obviously in some cases not all three possibilities may be possible: in the second example, removing \emph{\ipa{@n@n}} would leave it ambiguous as to \emph{who} is cold, since the `cold' word seems to carry no information about the subject in it. Japanese and other extreme pro-drop languages have no problem doing this, however, so it would be best practice to probe this further and ensure that Arapesh does not exhibit this tendency. But because Arapesh has so many pronouns elsewhere (as opposed to Japanese, which often lacks pronouns entirely), we can be reasonably confident *\emph{\ipa{n1r1ban}} `he is cold' would be ungrammatical, or at best very confusing.
+
+ \subsection{Adverbs}
+
+ To be completed. (of manner, kworahain (lise goes walking))
+
+ \subsection{Possession}
+
+ To be completed.
+
+ \subsection{Conjunction}
+
+ To be completed.
+
+ \subsection{Deixis}
+
+ To be completed. Discuss possessive construction, adverbial positioning, noncopular predications, case clitics.
+
+ \subsection{Indirect Constructions}
+
+ To be completed.
+
+ Discuss \emph{\ipa{\textltailn e}} with involuntary verbs.
+
+ \section{Semantics}
+
+ To be completed.
+
+ \subsection{Verbs of motion}
+
+ Discuss Mr. Sonin's refusal to say certain things (applying a color word to a class of objects, saying something will happen in the future that he ``does not know'', etc.)
+
+ Counting nouns only go up to four, after which 
+
+
+ \pagebreak
+ \section{Texts}
+
+ \subsection{Mr. Sonin Gets Lunch on the Corner}
+
+ \begin{exe}
+ \ex 
+ \gll d\ipa{\t{ou}}(k) belo \ipa{\t{ei}} yani michael nani james mana(k) m\ipa{\t{au}} worig\ipa{1}n gani \ipa{worig1nit} urupat \\
+ today twelve-o-clock i \textsc{prep} michael \textsc{prep} james we.go we.eat food \textsc{prep} of.food house \\ 
+ \trans `Today at noon I, Michael, and James went and ate food in the house of food.'
+
+ \ex 
+ \gll m\ipa{\t{au}} worig\ipa{1}n j\ipa{1r1g} \ipa{@}ri\ipa{@} \ipa{ata} matanamori \ipa{@gund@k} \\
+ we.ate food finished then  ? we.return here \\ 
+ \trans `We finished our food and then we returned here.'
+
+ \ex 
+ \gll matanamori \ipa{@gund@k} brooks hall \\
+ we.return here brooks hall  \\ 
+ \trans `We returned to Brooks Hall'
+
+ \ex 
+ \gll Mana mawic ga[ni] urupat worig\ipa{1nit} m\ipa{\t{au}} map\ipa{\super w}e \ipa{@}ri\ipa{@} m\ipa{\t{au}} worig\ipa{1n} \\
+ we.go we.enter inside house of.food we.eat we.sit then we.eat food\\ 
+ \trans `We returned to Brooks Hall'
+
+ \ex 
+ \gll worig\ipa{1n} j\ipa{1r1}g \ipa{@}ri\ipa{@} matanumori brooks hall \\
+ food finished then we.returned brooks hall \\ 
+ \trans `We finished our food and went back to brooks hall'
+ \end{exe}
+
+ \subsection{Roy}
+
+ \begin{exe}
+ \ex
+ \gll ei yani roy dou ruahaep wap\ipa{\super we} weyagureh\\
+ I \textsc{prep} Roy today morning we.sit we.talk \\
+ \trans `Today Roy and I sat and talked.'
+
+ \ex
+ \gll Roy sewok n\ipa{@n@} nap\ipa{\super w}e simbuh gani Highlands n\ipa{ana}mour\\
+ Roy before he he.goes he.sits Sumbuh.province \textsc{prep} Highlands he.works \\
+ \trans `Today Roy and I sat and talked.'
+
+ \ex
+ \gll napwe roubi \ipa{\textltailn}it\ipa{@}b gani highlands, new guinea highlands\\
+ he.stay long time \textsc{prep} highlands, new guinea highlands\\
+ \trans `Roy (spent) a long time in the highlands, the New Guinea highlands.'
+
+ \ex
+ \gll napwe n\ipa{ana}mour \ipa{@rig@s} abo rowogin \ipa{@ri@} n\ipa{@}tanamori \ipa{@gund@k} america. \ipa{@ri@} dou napwe \ipa{@gund@k}. \ipa{@n@nis} opis sapwe gani iruh urupat.\\
+ he.stay he.work until became treelike.old then he.returned here america then today he.stays here his office stays \textsc{prep} top house \\
+ \trans `Roy stayed and worked until he became old. Then he returned to America, here. So today he stays here. His office is on the top of the building.'
+
+ \ex 
+ \gll roy yopuni \ipa{@rpen}. yopuni rowogin \\
+ roy good man. good old man.\\
+ \trans `Roy is a good man. He's a good old man.'
+
+ \ex 
+ \gll na weyagureh na roy nad\ipa{@}kem tok pisin \\
+ ? we.talk ? roy knows tok pisin\\
+ \trans `'
+
+ \ex 
+ \gll roy nad\ipa{@}kem tok pisin. neyagureh wosik \\
+ roy knows tok pisin speaks well\\
+ \trans `Roy knows Tok Pisin. He speaks it well.'
+
+ \ex 
+ \gll weyagureh wapwe rowobi \ipa{\textltailn it@b} weyagureh \ipa{@}rig\ipa{@}s ay j\ipa{1r1}g hurukum belo \\
+ 1dual.talk 1dual.stayed long time 1dual.talked until ? finished near noon \\
+ \trans `'
+
+ \ex 
+ \gll \ipa{@}ri\ipa{@} yaka roy belo nau worig\ipa{1}n meyohwi\ipa{\textltailn} bora\ipa{\textltailn}\\
+ then i.said roy noon now food stop talk\\
+ \trans `'
+
+ \end{exe}
+
+ \subsection{The Frog Story}
+
+ This is a small segment of the recording that starts about 1/3 of the way in.
+
+ \begin{exe}
+ \ex 
+ \gll kurukur reir gani iruh rowog\\
+ beehive hang \textsc{prep} \\
+ \trans `'
+ \end{exe}
+
+
+ \pagebreak
+ \section*{References}
+
+ \begin{enumerate}
+
+ \item Dobrin, Lise. Instructor.
+
+ \item Sonin, Jacob. Consultant.
+
+
+ \end{enumerate}
+
+
+
+
+ \end{document}

@@ -1,0 +1,64 @@
+Addenda:
+-ɲək ɲəkuripweum saki yopuɲi not accepted (reverse saki, yopuɲi)
+-Interrogative pronouns
+-rejected ɲɨkɨriyen gamum (GAMUM ɲɨkɨriyen)
+-Imperative same as the future
+-Diphthong in puminek eik
+-Relation between grammatical gender and sex
+-formal discussion of parts of speech (in addition to how its distribution looks)
+
+-yaturup (i see it (the paper))
+-kids go to school
+-aka 'or'
+-add things from t3 to dictionary
+Desiderata:
+
+
+EC:
+-tati: name of Lise's dog with one eye
+-tati ənəndək 'tati he is here'
+-*tati ətəndət
+
+
+
+
+
+------------------------------------------
+
+Thanks, this is exactly what I was looking for! I'm in a field methods class working on a Papuan language and I think I'm finding something exactly like what you're describing.
+
+The word in question is /?ani/, where ? is a segment conditioned by noun class and number. Relevant forms, with the consultant's own glosses. Consultant is elderly with adequate but not fluent grasp of English:
+
+>ɲegɨr **ɲani** rowem
+
+>`stick and fruit'
+
+>pahwi rowep **pani** ahwi aropa **hani** pahwi chup
+
+>`red berries and red cloth and red paper' (stacked on top of each other)
+
+>Lisa kwapwe urupat **kwani** Ivan
+
+>`Lisa and Ivan are home'
+
+>chato **gani** mihig
+
+>`up on the hill'
+
+>chato **gani** weimog
+
+>`up on the ridge'
+
+>Mary **kw-ani** John **ch-ani** nəgachich yopugi ɲɨrɨk
+
+>(Mary 3sg.f-and John 3pl.common_gender-and children good family)
+
+>`Mary and John and children are a good family'
+
+In the second utterance, *kwapwe* is inflected for 3sg.f, which is points in favor of the *with* interpretation of /?ani/. 
+
+But this interpretation runs into trouble in the last utterance: this naive version would have produced *...John n-ani...* using the 3sg.m segment. Instead we find the 3pl.c segment, showing that /?ani/ is somehow agreeing with both Mary and John, something a hierarchical embedding of adjuncts wouldn't have us expect. 
+
+So a modified account might be that /?ani/'s ? is resolved by considering all the N's above /?ani/ in the parse tree, but I'm not sure if that holds for the second glossed form. *h-*, I think, is the form that corresponds to *aropa*, not the conjunction of *aropa* and *rowep*.
+
+Anyway, that was a huge tangent. Because q

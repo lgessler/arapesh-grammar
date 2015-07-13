@@ -1,0 +1,150 @@
+%
+%Luke Gessler
+%February 20, 2015
+%For ANTH 5401 at UVa: Linguistic Field Methods (Arapesh)
+%
+
+\documentclass[pdftex,12pt,a4paper]{article}
+\usepackage[pdftex]{graphicx}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage[margin=1in,dvips]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{qtree}
+\usepackage{amssymb}
+\usepackage{paralist}
+\usepackage{titlesec}
+\usepackage{gb4e}
+\usepackage{tipa}
+\usepackage{vowel}
+\usepackage{wrapfig}
+\let\ipa\textipa
+\usepackage[normalem]{ulem}
+\setlength{\parskip}{0mm}
+\usepackage{setspace}
+
+\newcommand{\BlankCell}{}
+
+%for metadata
+\title{A Grammatical Sketch of Arapesh \\ Revision 1}
+\author{Luke Gessler}
+\date{February 20, 2015}
+
+
+\begin{document}
+
+%title
+\input{./title.tex}
+%toc
+\tableofcontents
+\listoffigures
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Begin Actual Grammar %
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\doublespacing
+\section{Overview}
+
+Arapesh's apparent word order is SVO.
+
+In traditional typological terms, Arapesh is a fusional language. In other words, assuming the way we have segmented Arapesh utterances into words is correct, it appears that \begin{inparaenum} [(a)] \item the words consist of more than one morpheme on average, meaning it is not isolating, and \item these morphemes combine with each other in ways that are not purely concatenative, meaning it is not agglutinative. \end{inparaenum} 
+
+One of the most marked characteristics of Arapesh is its system of phonological alternations. \emph{Ceteris paribus}, when one noun is switched for a ``different'' one, the words that in some sense ``depend'' on it are usually significantly changed. Specifically, in the noun's ``dependent'' words, some sounds occur which aren't predictable just from the noun's own sounds. For this reason, it is claimed that these changes are not purely phonological, and that instead Arapesh has \emph{word classes}, categories of nouns which determine the inflectional patterns of both the noun and words that depend on it.
+
+Consider these examples:
+
+\begin{exe}
+
+\ex
+\gll \textbf{t}a\textbf{t}ud\textipa{@} numba\textbf{t} \textbf{t}ag\textipa{@}k \\
+that dog die \\
+\trans `That dog dies'
+
+\ex
+\gll \textbf{g}a\textbf{g}id\textipa{@} bo\textbf{g}\\
+that pen\\
+\trans `That pen'
+
+\ex
+\gll orubai\textbf{gw}i numba\textbf{u} \textbf{gw}ag\textipa{@}k \\
+many dogs die \\
+\trans `Many dogs die'
+
+\ex
+\gll bu\textbf{k} \\
+book \\
+\trans `book'
+
+\ex
+\gll orubai\textbf{w}i bu\textbf{mep} \\
+many books\\
+\trans `many books'
+
+\end{exe}
+
+\noindent From (1) and (2) we see that the head words' (\emph{numbat} and \emph{bog}) dependents (\emph{tatud\textipa{@}} and \emph{gagud\textipa{@}}) have inflected based on what we might refer to as \emph{thematic sound}s, which are rendered in boldface. Further, in (1), we see that the predicate being applied to the noun phrase has also taken on this thematic sound.
+
+But consider (3). The sounds that are conditioned by the noun's class need not be identical to, or even closely resemble, the sound present in the noun's dependents. Even the thematic sounds of a single noun in the singular and plural numbers need not have any relation \emph{prima facie}: it's hard to say what \emph{t} and \emph{u} have in common.
+
+We see this happening also in (4) and (5), with the notable difference that \emph{buk} is an English loanword. Apparently, it was incorporated seamlessly into an Arapesh noun class, as it is hard to imagine how else it was granted the plural form \emph{bumep}. This illustrates one of the biggest questions raised by the Arapesh data. We have clear evidence that noun classification is a productive process in Arapesh. What, then, are the criteria by which Arapesh noun classes are differentiated? These criteria could be phonological, semantic, or perhaps neither.
+
+\section{Phonology}
+
+Arapesh's phonology consists of at most 12 monophthongs and 5 diphthongs, and no more than 25 consonants. Suprasegmentals are largely inert in differentiation of words: any differences in vowel quantity, tone, or nasality seem to be inconsequential. There are two exceptions: \begin{inparaenum}[(a)] \item owing to the paucity of our data, it is not clear yet whether stress is phonemic, and \item Arapesh exhibits some vowel alternations that may be indicative of vowel harmony, though it is as yet unclear. \end{inparaenum} 
+
+\subsection{Consonants}
+
+\subsection{Vowels}
+
+\subsubsection{Monophthongs}
+
+\begin{wrapfigure}{r}{.5\textwidth}
+\begin{center}
+{\large
+\begin{vowel}
+  \putcvowel{i}{1}
+    \putcvowel{\ipa{1}}{9}
+      \putvowel{e}{40pt}{40pt}
+        \putcvowel{\ipa{@}}{12}
+          \putcvowel{\ipa{5}}{15}
+            \putvowel{o}{100pt}{40pt}
+              \putcvowel{u}{8}
+              \end{vowel}
+}
+\caption{Arapesh monophthongs.}
+\end{center}
+\end{wrapfigure}
+
+Arapesh's phonology consists of at most 12 monophthongs and 5 diphthongs, and no more than 25 consonants. Suprasegmentals are largely inert in differentiation of words: any differences in vowel quantity, tone, or nasality seem to be inconsequential. There are two exceptions: \begin{inparaenum}[(a)] \item owing to the paucity of our data, it is not clear yet whether stress is phonemic, and \item Arapesh exhibits some vowel alternations that may be indicative of vowel harmony, though it is as yet unclear.\end{inparaenum}
+
+
+
+\subsubsection{Diphthongs}
+
+\subsubsection{Unresolved }
+
+\subsection{Syllable Structure}
+
+\subsection{Sandhi}
+
+\subsection{Unresolved Questions}
+
+\section*{References}
+
+\begin{enumerate}
+
+\item Mahrt, Tim. IPA Vowel and Consonant Charts. Accessed on Feb. 22, 2015 at https://www.essex.ac.uk/linguistics/external/clmt/latex4ling/tipa/ipa-consonants.tex
+
+
+\end{enumerate}
+
+
+
+
+\end{document}
