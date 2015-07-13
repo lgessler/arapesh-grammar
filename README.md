@@ -1,7 +1,7 @@
 # Written Materials
-### Linguistic Field Methods
-### ANTH 5401 Spring 2015
-### University of Virginia
+##### Linguistic Field Methods
+##### ANTH 5401 Spring 2015
+##### University of Virginia
 
 This is a list of materials written by me (Luke Gessler, ldg3fa@virginia.edu) during this course. Majorly, included here is my 50-ish page grammatical sketch of Arapesh, a nearly-extinct language in Papua New Guinea.
 
