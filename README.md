@@ -4,7 +4,7 @@
 
 This is a list of materials written by me (Luke Gessler, ldg3fa@virginia.edu) during this course. Majorly, included here is my 50-ish page grammatical sketch of Arapesh, a nearly-extinct language in Papua New Guinea.
 
-Writing the sketch was a sometimes excruciating experience, but well-worth every tear shed as a learning experience.
+Writing the sketch was at times excruciating, but well-worth every tear shed as a learning experience.
 
 See also the [sister repository](https://github.com/lgessler/fieldmethods-lexicon-reader) containing very hacky Python code I used to help me manage the glosses I collected from Mr. Sonin, our consultant.
 
